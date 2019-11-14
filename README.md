@@ -8,7 +8,7 @@ This is a package of html page that helps your debugging for analytics tools.
 ```sh
 mkdir keys
 openssl genrsa 2048 > keys/server.key
-openssl req -new -key keys/server.key > server.csr
+openssl req -new -key keys/server.key > keys/server.csr
 openssl x509 -in keys/server.csr -days 1825 -req -signkey keys/server.key > keys/server.crt
 ```
 
