@@ -14,11 +14,11 @@ openssl x509 -in keys/server.csr -days 1825 -req -signkey keys/server.key > keys
 
 ### Build
 ```sh
-docker build -t test-page .
+docker build -t nginx-local-test .
 ```
 
 ### Run
 
 ```sh
-docker run -d --name test-page -p 443:443 -p 80:80 test-page
+docker run -d --name Web -p 443:443 -p 80:80 nginx-local-test
 ```
