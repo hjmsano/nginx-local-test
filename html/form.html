@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example Page</title>
+  <meta name="keyword" content="test-page" />
+  <meta name="description" content="Lorem ipsum dolor sit amet" />
+  <!--#include file="_tags_head.html" -->
+</head>
+
+<body style="margin: 0; padding: 0;">
+  <!--#include file="_tags_body_top.html" -->
+  <div data-trackable="main" style="width: 840px; margin: 40px 50px; padding: 0;">
+    <header id="header" data-trackable="header" style="width: 100%; margin: 0; padding: 0;">
+      <div data-trackable="title" style="float: left; height: 100px; width: 60%">
+        <h1 id="title">Example Page</h1>
+      </div>
+      <div data-trackable="member" style="float: right; height: 100px; width: 40%; text-align: right;">
+        <button id="login" data-trackable="login">Login</button>
+        <button id="sign-up" data-trackable="sign-up">Sign up</button>
+      </div>
+    </header>
+    <div id="body" data-trackable="body" style="margin-left: auto; margin-right: auto; clear: both; width: 100%">
+      <div id="menu" data-trackable="menu" style="float: left; width: 20%">
+        <ul>
+          <li><a href="./?page=1" data-trackable="home">Home</a></li>
+          <li><a href="./form.html?page=1" data-trackable="form">Form</a></li>
+          <li><a href="./links.html?page=1" data-trackable="links">Links</a></li>
+        </ul>
+        <div>
+          <a href="./?page=ad_1" data-trackable="ad_1"><img src="ad.png" width="90%" /></a>
+        </div>
+        <div>
+          <a href="./?page=ad_2" data-trackable="ad_2"><img src="ad.png" width="90%" /></a>
+        </div>
+      </div>
+      <div id="content" data-trackable="content" style="float: right; width: 80%">
+        <form name="form1" id="simple_form" method="post">
+            <table border="1">
+                <tr><th>Text</th><td><input type="text" name="free-text" placeholder="some text" /></td></tr>
+                <tr><th>Password</th><td><input type="password" name="password-box" placeholder="some text" /></td></tr>
+                <tr><th>Checkbox</th><td><input type="checkbox" name="checkbox-a" value="c1" /> C1</td></tr>
+                <tr><th></th><td><input type="checkbox" name="multiple-choice" value="c2" /> C2</td></tr>
+                <tr><th></th><td><input type="checkbox" name="multiple-choice" value="c3" /> C3</td></tr>
+                <tr><th></th><td><input type="checkbox" name="multiple-choice" value="c4" /> C4</td></tr>
+                <tr><th>Radio Button</th><td><input type="radio" name="single-choice" value="r1" /> R1</td></tr>
+                <tr><th></th><td><input type="radio" name="single-choice" value="r2" /> R2</td></tr>
+                <tr><th></th><td><input type="radio" name="single-choice" value="r3" /> R3</td></tr>
+                <tr><th></th><td><input type="radio" name="single-choice" value="r4" /> R4</td></tr>
+                <tr><th>Single Select</th><td>
+                    <select name="form_select_1">
+                        <option value="s1-1">S1-1</option>
+                        <option value="s1-2">S1-2</option>
+                        <option value="s1-3">S1-3</option>
+                        <option value="s1-4">S1-4</option>
+                    </select>
+                </td></tr>
+                <tr><th>Multiple Select</th><td>
+                    <select name="form_select_2" size="4" multiple>
+                        <option value="s2-1">S2-1</option>
+                        <option value="s2-2">S2-2</option>
+                        <option value="s2-3">S2-3</option>
+                        <option value="s2-4">S2-4</option>
+                    </select>
+                </td></tr>
+                <tr><th>Textarea</th><td><textarea name="form_textarea" size="4" placeholder="paragraphs"></textarea></td></tr>
+                <tr><th></th><td><input type="submit" name="form_button" id="form_button" value="submit" /></td></tr>
+            </table>
+        </form>
+      </div>
+    </div>
+    <footer id="footer" data-trackable="footer" style="clear: both;">
+      <p>Copyright</p>
+    </footer>
+  </div>
+  <!--#include file="_tags_body_bottom.html" -->
+</body>
+
+</html>
