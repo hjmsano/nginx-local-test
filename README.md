@@ -33,7 +33,7 @@ docker run -d --name Web -p 443:443 -p 80:80 hsano/nginx-local-test:latest
 
 ## Assign a directly of html files
 
-- You can assign your local directly as a root of webpage by adding `-v {~/your/test/dir}:/var/html` option to `docker run` command.
+- You can assign your local directly as a root of webpage by adding `-v ``pwd``:/var/html` option to `docker run` command.
 - Or, you can configure it through Kitematic.
 
 ## Set a host name
